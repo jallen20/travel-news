@@ -1,8 +1,19 @@
-.preview-item {
-  display: flex;
-  flex-direction: column;
-  border: 1px #ccc solid;
+.carousel-view-container {
+  width: 100%;
+  height: calc(100vh - 54px);
 }
-.home-page-list-view {
-  
+@media screen and (min-width: 600px) {
+  .home-page-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 54px);
+  }
+  .carousel-view-container {
+    height: 50%;
+  }
+  .preview-list-container {
+    height: calc(100vh - 54px - 50%);
+    overflow: scroll;
+
+  }
 }

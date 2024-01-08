@@ -3,11 +3,18 @@ import {ArrowLeft} from "react-bootstrap-icons";
 import {useRouter} from "next/navigation";
 import styles from "./BackButton.module.scss";
 
-const BackButton = () => {
+interface LocalProps {
+    width?: number;
+    height?: number;
+}
+const BackButton = ({
+    width,
+    height,
+}: LocalProps) => {
     const router = useRouter();
     return (
         <button className={styles["back-button"]} onClick={() => router.back()}>
-            <ArrowLeft/>
+            <ArrowLeft width={width} height={height}/>
         </button>
     )
 };

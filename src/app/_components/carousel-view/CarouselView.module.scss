@@ -10,18 +10,16 @@
   width: auto;
   transform: translateX(-100px);
 }
-.carousel-view {
-  height: calc(100vh - 54px);
+@media screen and (min-width: 600px) {
+  .carousel-view-img {
+    width: 100%;
+    height: auto;
+    transform: translateX(0) translateY(-200px);
+  }
 }
 .carousel-content {
   height: 100%;
 }
-//@media screen and (min-width: 600px) {
-//  .carousel-view-img {
-//    width: 100%;
-//    height: auto;
-//  }
-//}
 
 .carousel-img-container {
   position: relative;

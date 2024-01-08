@@ -30,7 +30,7 @@ const CarouselView = ({
 }: LocalProps) => {
     const [index, setIndex] = useState(0);
     return (
-        <Carousel className={styles["carousel-view"]} activeIndex={index} onSelect={(i: number) => setIndex(i)}>
+        <Carousel style={{height: "100%"}} className={styles["carousel-wrapper"]} activeIndex={index} onSelect={(i: number) => setIndex(i)}>
             {media.map((item) => (
                 <Carousel.Item className={styles["carousel-content"]} key={item.url} interval={4000}>
                     <CarouselImage src={getFullImageUrl(item.url)}/>

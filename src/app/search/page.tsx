@@ -42,7 +42,7 @@ const SearchPage = () => {
                 <div className={styles["no-results"]}>
                     <div className={styles["no-results-content"]}>
                         <Search/>
-                        No Results Found.
+                        <span>No Results Found.</span>
                     </div>
                 </div>
             }

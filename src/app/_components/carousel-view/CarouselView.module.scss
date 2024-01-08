@@ -1,0 +1,32 @@
+.img-overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(8,8,8,0.5480786064425771) 84%, rgba(62,62,62,1) 100%);
+}
+.carousel-view-img {
+  height: 100%;
+  width: auto;
+  transform: translateX(-100px);
+}
+.carousel-view {
+  height: calc(100vh - 54px);
+}
+.carousel-content {
+  height: 100%;
+}
+//@media screen and (min-width: 600px) {
+//  .carousel-view-img {
+//    width: 100%;
+//    height: auto;
+//  }
+//}
+
+.carousel-img-container {
+  position: relative;
+  width: auto;
+  overflow: hidden;
+  height: 100%;
+  z-index: -1;
+}

@@ -1,0 +1,19 @@
+.preview-item {
+  border-bottom: 1px #ccc solid;
+  padding: 12px;
+  p {
+    display: block;
+    width: 300px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .list-item {
+      margin: 8px;
+  }
+
+  span {
+    font-style: oblique;
+  }
+}
